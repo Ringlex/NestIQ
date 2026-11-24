@@ -1,0 +1,43 @@
+{
+ "clientId": "abcdefghijklmnopqrst",
+ "secret": "0123456789abcdef0123456789abcdef",
+ "now": 1700000000123,
+ "requests": [
+  {
+   "method": "GET",
+   "path": "/v1.0/token?grant_type=1",
+   "body": "",
+   "sign": "1B5ECA4F546A0D94F04962ECA00EFF4727046C8A379FBB45F49CEF25674D9831",
+   "t": "1700000000123",
+   "token": null,
+   "signedHeaders": ""
+  },
+  {
+   "method": "GET",
+   "path": "/v1.0/iot-01/associated-users/devices?last_row_key=abc&size=50",
+   "body": "",
+   "sign": "4DF8F863E49D280A8173956456EC16245F124E522F73C9A3A8D850A5E777F4B9",
+   "t": "1700000000123",
+   "token": "TOKEN123",
+   "signedHeaders": ""
+  },
+  {
+   "method": "POST",
+   "path": "/v1.0/iot-03/devices/ebabcdef1234567890ab/commands",
+   "body": "{\"commands\": [{\"code\": \"switch_1\", \"value\": true}]}",
+   "sign": "EDD30021FDCAAB68830C45142B9807D4A3A9FA718F280C5C7D2EE2000284EFBC",
+   "t": "1700000000123",
+   "token": "TOKEN123",
+   "signedHeaders": "Content-type"
+  },
+  {
+   "method": "GET",
+   "path": "/v1.0/iot-03/devices/ebabcdef1234567890ab/status",
+   "body": "",
+   "sign": "250889F7CC95CC56DD00E0027A159728F718498EDEB8BB1D617A25544E97FFAD",
+   "t": "1700000000123",
+   "token": "TOKEN123",
+   "signedHeaders": ""
+  }
+ ]
+}

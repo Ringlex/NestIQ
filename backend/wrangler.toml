@@ -1,0 +1,16 @@
+name = "nestiq-api"
+main = "src/index.ts"
+compatibility_date = "2026-06-01"
+
+# Konta, profile domownikow, sesje.
+[[d1_databases]]
+binding = "DB"
+database_name = "nestiq"
+database_id = "0230a476-9f5c-4738-82d7-12905719d086"
+
+[vars]
+MAIL_FROM = "NestIQ <login@mypitstop.org>"
+
+# Sekrety - `wrangler secret put <NAZWA>`, nigdy w pliku i nigdy w aplikacji:
+#   JWT_SECRET       podpis tokenow dostepu (min. 32 losowe bajty)
+#   RESEND_API_KEY   wysylka kodow weryfikacyjnych
